@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomActivity"
+    android:id="@+id/roomRelativeLayout">
+
+    <ImageView
+        android:id="@+id/room_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/baseline_arrow_back_black_18"/>
+
+    <TextView
+        android:id="@+id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_arrow"
+        tools:text="Bedroom"
+        android:textSize="30sp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/roomAppliancesRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/appliancesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Appliances"
+        android:textSize="20sp"
+        android:layout_marginLeft="25dp"
+        android:layout_above="@id/roomAppliancesRecycler"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

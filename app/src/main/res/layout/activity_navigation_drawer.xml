@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navigationDrawer"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer>

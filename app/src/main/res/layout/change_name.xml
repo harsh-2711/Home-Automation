@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".NameActivity"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Change user name"
+    android:fontFamily="sans-serif-condensed"
+    android:textSize="30sp"
+    android:textColor="#000"
+    android:layout_marginTop="200dp"
+    android:layout_gravity="center"/>
+
+<EditText
+    android:layout_marginTop="50dp"
+    android:id="@+id/new_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Enter your name.."
+    android:textSize="20sp"
+    android:textColor="#2196f3"
+    android:textStyle="bold"
+    android:layout_gravity="center"/>
+
+<Button
+    android:id="@+id/change_it"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Change It"
+    android:textAllCaps="false"
+    android:layout_below="@id/new_name"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="25dp"
+    android:layout_gravity="center"/>
+
+</LinearLayout>
